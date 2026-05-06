@@ -42,7 +42,7 @@ void loop() {
 
     else if (x_status > 768){
       analogWrite(e1, x_status-768);
-      analogWrite(e2, 255);
+      analogWrite(e2, 1023-x_status);
     }
     
     else if (x_status > 255 && x_status<768){
